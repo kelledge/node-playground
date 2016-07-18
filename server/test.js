@@ -6,8 +6,8 @@ var sineTransform = require('./sineTransform');
 var server = http.createServer()
 var wss = websocket.createServer({server: server}, handle)
 
-ts = timeStream(0, 1000);
-st = sineTransform(5000, 100);
+ts = timeStream(0, 500);
+st = sineTransform(10000, 100);
 ts.begin()
 
 server.listen(8888)

@@ -17,16 +17,16 @@ Highcharts.setOptions({
 
 var options = {
     chart: {
-        type: 'spline',
+        type: 'line',
         animation: Highcharts.svg, // don't animate in old IE
-        marginRight: 10000
     },
     title: {
         text: 'Live sine data'
     },
     xAxis: {
         type: 'datetime',
-        tickPixelInterval: 150
+        minRange: 10000,
+        ordinal: false
     },
     yAxis: {
         title: {
@@ -36,7 +36,10 @@ var options = {
             value: 0,
             width: 1,
             color: '#808080'
-        }]
+        }],
+        min: -100.0,
+        max: 100.0,
+        ordinal: false
     },
     tooltip: {
         formatter: function () {
@@ -54,7 +57,7 @@ var options = {
     series: [
         {
             name: 'Sine data',
-            data: [(new Date()).getTime(), 0]
+            data: []
         }
     ]
 }

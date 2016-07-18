@@ -1,0 +1,31 @@
+{
+  "name": "node-playground",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.14.0",
+    "highcharts": "^4.2.5",
+    "http": "0.0.0",
+    "jquery": "^3.1.0",
+    "websocket-stream": "^3.2.1"
+  },
+  "devDependencies": {
+    "browserify": "^13.0.1",
+    "gulp": "^3.9.1",
+    "watchify": "^3.7.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kelledge/node-playground.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kelledge/node-playground/issues"
+  },
+  "homepage": "https://github.com/kelledge/node-playground#readme"
+}
